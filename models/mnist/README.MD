@@ -1,0 +1,3 @@
+最简单的MNIST模型`mnist_model`和允许基于同一个`model_fn`的 Estimator 进行训练，验证，预测和迁移学习的模型`transfer_and_finetune`
+
+这里只简单地写了下将MNIST训练的基础ckpt迁移到HND手写字母训练集上的过程。
