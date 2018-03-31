@@ -19,9 +19,6 @@
 
 `keras_to_estimator`目录包括了将 Keras 的 Inception_v3 模型转换为 Estimator，迁移学习，保存和加载的方法。
 
-##### TODO:
-- 整理好代码，多写一些注释，上传
-
 
 
 
