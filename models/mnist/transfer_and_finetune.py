@@ -2,7 +2,7 @@ import numpy as np
 import tensorflow as tf
 import os
 
-from models import MODELS_DIR
+from models import MODELS_DIR, BASE_DIR
 from models.mnist.dataset_reader import dataset_input_fn
 
 
@@ -120,8 +120,8 @@ if __name__ == '__main__':
 
     train_input_fn = dataset_input_fn(
         folders=[
-            os.path.join("D:\\训练集\\Hnd\\Img", "Sample041"),  # e
-            os.path.join("D:\\训练集\\Hnd\\Img", "Sample045"),  # i
+            os.path.join(BASE_DIR, "images_dataset", "Hnd", "Img", "train", "Sample041"),  # e
+            os.path.join(BASE_DIR, "images_dataset", "Hnd", "Img", "train", "Sample041"),  # i
         ],
         labels=[0, 1],
         height=28, width=28, channels=1,
@@ -134,8 +134,8 @@ if __name__ == '__main__':
 
     eval_input_fn = dataset_input_fn(
         folders=[
-            os.path.join("D:\\验证集\\Hnd\\Img", "Sample041"),  # e
-            os.path.join("D:\\验证集\\Hnd\\Img", "Sample045"),  # i
+            os.path.join(BASE_DIR, "images_dataset", "Hnd", "Img", "eval", "Sample041"),  # e
+            os.path.join(BASE_DIR, "images_dataset", "Hnd", "Img", "eval", "Sample041"),  # i
         ],
         labels=[0, 1],
         height=28, width=28, channels=1,
@@ -155,8 +155,8 @@ if __name__ == '__main__':
 
     train_input_fn = dataset_input_fn(
         folders=[
-            os.path.join("D:\\训练集\\Hnd\\Img", "Sample041"),  # e
-            os.path.join("D:\\训练集\\Hnd\\Img", "Sample045"),  # i
+            os.path.join(BASE_DIR, "images_dataset", "Hnd", "Img", "train", "Sample041"),  # e
+            os.path.join(BASE_DIR, "images_dataset", "Hnd", "Img", "train", "Sample041"),  # i
         ],
         labels=[0, 1],
         height=28, width=28, channels=1,
@@ -169,8 +169,8 @@ if __name__ == '__main__':
 
     eval_input_fn = dataset_input_fn(
         folders=[
-            os.path.join("D:\\验证集\\Hnd\\Img", "Sample041"),  # e
-            os.path.join("D:\\验证集\\Hnd\\Img", "Sample045"),  # i
+            os.path.join(BASE_DIR, "images_dataset", "Hnd", "Img", "eval", "Sample041"),  # e
+            os.path.join(BASE_DIR, "images_dataset", "Hnd", "Img", "eval", "Sample041"),  # i
         ],
         labels=[0, 1],
         height=28, width=28, channels=1,
